@@ -1,0 +1,260 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lexend:wght@100..900&family=Outfit:wght@100..900&display=swap");
+body {
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    /* font-weight: 600; */
+    font-style: normal;
+}
+.container_body {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* header style start */
+.header_element {
+    padding: 15px 0;
+    border-bottom: 3px solid rgb(193 255 231);
+    /* box-shadow: 3px 2px 8px rgba(193, 255, 231, 0.5); */
+    /* --tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+    --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color); */
+    box-shadow:
+        0 4px 6px -1px rgba(0, 0, 0, 0.1),
+        0 2px 4px -2px rgba(0, 0, 0, 0.1);
+}
+.hearsh_icon {
+    width: 100px;
+}
+/* header style end *?
+
+/* banner image style */
+.banner_img {
+    max-width: 225px;
+}
+.harsh_name {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    color: rgb(71 188 148);
+    font-weight: 600;
+    /* background: linear-gradient(269deg, #e9458a 0.21%, #ac41dd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+}
+
+.max_width {
+    width: 100%;
+    max-width: 360px;
+}
+
+/* input bosx style start*/
+.formRow_input_wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.formRow_input {
+    padding: 12.8px 15px;
+    width: 100%;
+    outline: none;
+    border: 1px solid rgb(71 188 148);
+    border-radius: 10px;
+    color: rgb(44, 50, 53);
+    font-size: 13px;
+    transition: border-color 0.2s ease;
+}
+
+.formRow_input:focus {
+    /* border-color: #fd999a; */
+}
+
+.formRow_input:valid + .placeholder {
+    top: -10px;
+    left: 15px;
+    font-size: 14px;
+    color: rgb(71 188 148);
+    background: #fff;
+    padding: 0 5px;
+    font-weight: 500;
+    transform: translateY(0);
+}
+
+.placeholder {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    transition: all 0.2s ease;
+    font-size: 16px;
+    color: rgb(149, 152, 154);
+    pointer-events: none;
+    user-select: none;
+    background: #fff;
+    padding: 0 5px;
+}
+
+/* input bosx style end*/
+
+.verify_info {
+    margin-top: 5px;
+    padding-top: 0;
+    font-size: 13px;
+    padding: 0 1rem;
+    color: #555;
+}
+
+.formRow_input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+.error_msg {
+    font-size: 14px;
+    /* padding: 0 1rem; */
+}
+
+.bodystle {
+    height: 70vh;
+    padding: 0px;
+}
+.continus_btn {
+    border: none;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 0;
+    border-radius: 10px;
+    background: linear-gradient(269deg, #e9458a 0.21%, #ac41dd);
+    color: #fff;
+    font-weight: 500;
+}
+
+.card_body {
+    padding: 2rem 4rem;
+}
+/* about */
+.about {
+    margin-top: 2rem;
+    border: none;
+    border-radius: 25px;
+    background-color: rgb(245 255 247);
+}
+.about_text {
+    padding: 2rem 3rem;
+}
+.about_text h2 {
+    font-size: 20px;
+}
+.about_text h3 {
+    font-size: 18.5px;
+}
+
+.about_h6 {
+    font-weight: 400;
+    font-size: 19px;
+    color: #555;
+}
+.about_p {
+    font-size: 13px !important;
+    color: #555 !important;
+    line-height: 16px;
+}
+
+/* window layer */
+/* .windowLayer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    cursor: default;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+@media (max-width: 550px) {
+    .formRow_input {
+        padding: 13.4px 15px;
+    }
+    .about_p {
+        font-size: 11.5px !important;
+    }
+    .input_elementDiv {
+        margin-top: 2rem !important;
+    }
+    .header_element {
+        padding: 10px 0;
+    }
+    .logo {
+        display: flex;
+        justify-content: center;
+    }
+    .hearsh_icon {
+        width: 80px;
+    }
+    .banner_img {
+        max-width: 190px;
+    }
+
+    .card_body {
+        padding: 1rem 1rem;
+    }
+    .harsh_name {
+        font-size: 22px;
+        margin-bottom: 0px;
+    }
+
+    .input_box {
+        padding: 8px 4px 8px 8px;
+        font-size: 14px;
+    }
+    .continus_btn {
+        padding: 7px 0;
+        width: 60%;
+    }
+    .about {
+        margin-top: 1rem;
+    }
+
+    .ant-modal .ant-modal-content {
+        padding: 0px !important;
+    }
+    .input_module {
+        margin-top: 10px !important;
+    }
+
+    .verify_info {
+        font-size: 11.5px;
+        line-height: 15px;
+    }
+    .error_msg p {
+        font-size: 11.5px !important;
+        line-height: 15px;
+    }
+    .btnContainerDiv {
+        margin-top: 1.5rem !important;
+    }
+    .formRow_input:valid + .placeholder {
+        font-size: 12px;
+    }
+    .about_h6 {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 450px) {
+    .banner_img {
+        max-width: 200px;
+    }
+    .harsh_name {
+        font-size: 21px;
+        margin-bottom: 0px;
+    }
+
+    .continus_btn {
+        padding: 7px 0;
+        width: 60%;
+    }
+    .about {
+        margin-top: 1rem;
+    }
+}
